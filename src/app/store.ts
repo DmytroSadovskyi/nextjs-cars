@@ -3,7 +3,7 @@ import { persist, createJSONStorage } from "zustand/middleware";
 import { Car } from "./components/CarCard/CarCard";
 
 interface State {
-  items: Car[];
+  cars: Car[];
   addToFavorites: (car: Car) => void;
   removeFromFavorites: (carId: number) => void;
 }
@@ -11,12 +11,12 @@ interface State {
 export const useStore = create<State>()(
   persist(
     (set) => ({
-      items: [],
+      cars: [],
       addToFavorites: (car: Car) =>
-        set((state) => ({ items: [...state.items, car] })),
+        set((state) => ({ cars: [...state.cars, car] })),
       removeFromFavorites: (carId: number) =>
         set((state) => ({
-          items: state.items.filter((car: Car) => car.id !== carId),
+          cars: state.cars.filter((car: Car) => car.id !== carId),
         })),
     }),
     {

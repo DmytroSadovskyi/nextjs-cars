@@ -11,10 +11,10 @@ import { Car } from "../../components/CarCard/CarCard";
 import Filter from "../Filter/Filter";
 
 export default function FavoriteCars() {
-  const { items } = useStore();
+  const { cars } = useStore();
   const [makes, setMakes] = useState<string[]>([]);
   const [mounted, setMounted] = useState(false);
-  const [filteredCars, setFilteredCars] = useState<Car[]>(items);
+  const [filteredCars, setFilteredCars] = useState<Car[]>(cars);
   const [applyFiltersFlag, setApplyFiltersFlag] = useState(false);
   const [showNoCarsMessage, setShowNoCarsMessage] = useState(false);
   const [makeFilter, setMakeFilter] = useState("");
@@ -35,11 +35,11 @@ export default function FavoriteCars() {
 
   useEffect(() => {
     const uniqMakes: string[] = Array.from(
-      new Set(items.map((car: Car) => car.make))
+      new Set(cars.map((car: Car) => car.make))
     );
     setMakes(uniqMakes);
-    setFilteredCars(items);
-  }, [items]);
+    setFilteredCars(cars);
+  }, [cars]);
 
   const filterCars = useCallback(
     (car: Car) => {
@@ -77,7 +77,7 @@ export default function FavoriteCars() {
 
   useEffect(() => {
     if (applyFiltersFlag) {
-      const filteredCars = items.filter(filterCars);
+      const filteredCars = cars.filter(filterCars);
       setFilteredCars(filteredCars);
       if (filteredCars.length === 0) {
         setShowNoCarsMessage(true);
@@ -87,7 +87,7 @@ export default function FavoriteCars() {
       }
       setApplyFiltersFlag(false);
     }
-  }, [applyFiltersFlag, items, filterCars]);
+  }, [applyFiltersFlag, cars, filterCars]);
 
   const sortedCars = [...filteredCars].sort((a, b) => {
     if (sortOrder === "ascending") {
@@ -108,7 +108,7 @@ export default function FavoriteCars() {
     setPriceFilter("");
     setMileageFilter({ min: "", max: "" });
     setApplyFiltersFlag(true);
-    setFilteredCars(items);
+    setFilteredCars(cars);
     setShowNoCarsMessage(false);
   };
 

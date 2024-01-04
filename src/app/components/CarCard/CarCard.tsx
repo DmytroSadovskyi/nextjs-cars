@@ -44,9 +44,9 @@ export default function CarCard({ car }: { car: Car }) {
     address,
     mileage,
   } = car;
-  const { items, addToFavorites, removeFromFavorites } = useStore();
+  const { cars, addToFavorites, removeFromFavorites } = useStore();
 
-  const isFavorite = items.some((favoriteCar) => favoriteCar.id === car.id);
+  const isFavorite = cars.some((favoriteCar) => favoriteCar.id === car.id);
 
   const addFavorite = () => addToFavorites(car);
   const removeFavorite = () => removeFromFavorites(car.id);
