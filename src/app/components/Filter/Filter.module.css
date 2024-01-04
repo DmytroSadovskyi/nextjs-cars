@@ -1,0 +1,102 @@
+.filterContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  gap: 18px;
+  align-items: flex-end;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1110px) {
+  .filterContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.selectWrapper {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.mileageInputsWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  color: #8a8a89;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.29;
+}
+
+.mileageInputLeft,
+.mileageInputRight {
+  width: 130px;
+  height: 48px;
+  padding: 14px 60px 14px 24px;
+  border-radius: 14px 0px 0px 14px;
+  border: none;
+  background: #f7f7fb;
+  color: #121417;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.11;
+}
+
+@media screen and (min-width: 380px) {
+  .mileageInputLeft,
+  .mileageInputRight {
+    width: 160px;
+    padding: 14px 93px 14px 24px;
+  }
+}
+
+.mileageInputLeft::placeholder,
+.mileageInputRight::placeholder {
+  color: #121417;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.11;
+}
+
+.buttonsWrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: 9px;
+}
+
+.filterButton {
+  display: flex;
+  width: 136px;
+  height: 48px;
+  padding: 14px 44px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: #3470ff;
+  border: none;
+
+  color: #fff;
+  font-family: Manrope;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filterButton:hover,
+.filterButton:focus {
+  background-color: #0b44cd;
+}

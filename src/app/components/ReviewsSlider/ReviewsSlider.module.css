@@ -1,0 +1,24 @@
+.wrapper {
+  position: relative;
+}
+
+
+.controls {
+  position: absolute;
+  display: flex;
+  gap: 8px;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btnPrev,
+.btnNext {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+}

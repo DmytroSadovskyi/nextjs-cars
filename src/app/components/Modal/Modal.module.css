@@ -1,0 +1,270 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(18, 20, 23, 0.5);
+}
+
+.modalWrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 24px;
+  padding: 20px;
+  max-width: 360px;
+  z-index: 100;
+
+  border-radius: 24px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.modalWrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modalWrapper::-webkit-scrollbar-thumb {
+  background: rgba(18, 20, 23, 0.05);
+  border-radius: 10px;
+}
+
+.modalWrapper::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.modalWrapper::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+@media screen and (max-height: 815px) {
+  .modalWrapper {
+    height: 600px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 570px) {
+  .modalWrapper {
+    padding: 30px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .modalWrapper {
+    padding: 40px;
+    max-width: 100%;
+  }
+}
+
+.wrapper {
+  position: relative;
+  background-color: #fff;
+  border-radius: 24px;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    width: 461px;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  color: black;
+  top: -10px;
+  right: -10px;
+  background-color: transparent;
+  width: 10px;
+  height: 10px;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .closeButton {
+    top: -22px;
+    right: -12px;
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (min-width: 1440px) {
+  .closeButton {
+    top: -30px;
+    right: -20px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.image {
+  width: 461px;
+  height: 248px;
+  border-radius: 14px;
+  object-fit: cover;
+  margin-bottom: 14px;
+}
+
+.carInfoWrapper {
+  width: 461px;
+}
+
+.carName {
+  margin-bottom: 8px;
+  color: #121417;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.carModel {
+  margin-left: 5px;
+  color: #3470ff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.carInfo {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 14px;
+  color: rgba(18, 20, 23, 0.5);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.carInfoItem {
+  padding-right: 4px;
+}
+
+.carInfoItem:not(:last-child) {
+  border-right: 1px solid rgba(18, 20, 23, 0.1);
+}
+
+.carInfoItem > span:last-child {
+  padding-left: 4px;
+}
+
+.city {
+  padding-right: 4px;
+  border-right: 1px solid rgba(18, 20, 23, 0.1);
+}
+
+.description {
+  margin-bottom: 24px;
+  color: #121417;
+
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.42;
+}
+
+.accessoriesInfo {
+  display: flex;
+  flex-direction: column;
+  margin: 24px 0;
+}
+
+.title {
+  color: #121417;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+.accessoriesList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: rgba(18, 20, 23, 0.5);
+
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  gap: 3px;
+}
+
+.accessoriesListItem {
+  color: rgba(18, 20, 23, 0.5);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-right: 4px;
+}
+.accessoriesListItem:not(:last-child) {
+  border-right: 1px solid rgba(18, 20, 23, 0.1);
+}
+
+.rentalInfoTitle {
+  margin-bottom: 8px;
+  color: #121417;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+}
+
+.rentalInfo {
+  width: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+  .rentalInfo {
+    width: 100%;
+  }
+}
+
+.rentalInfoItem {
+  padding: 7px 14px;
+  border-radius: 35px;
+  background: #f9f9f9;
+  color: #363535;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.rentalInfoItem span {
+  color: #3470ff;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.24px;
+}
+
+.rentalLink {
+  display: inline-flex;
+  padding: 12px 50px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: #3470ff;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+  text-decoration: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.rentalLink:hover,
+.rentalLink:focus {
+  background-color: #0b44cd;
+}

@@ -1,0 +1,107 @@
+.carWrapper {
+  display: flex;
+  width: 274px;
+  height: 426px;
+  flex-direction: column;
+}
+
+.imageWrapper {
+  width: 100%;
+  position: relative;
+  margin-bottom: 14px;
+}
+
+.iconWrapper {
+  position: absolute;
+  margin: 0;
+  top: 14px;
+  right: 14px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.carImage {
+  border-radius: 14px;
+  width: 274px;
+  height: 268px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.carName {
+  color: #121417;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.model {
+  margin-left: 5px;
+  color: #3470ff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.city {
+  padding-right: 4px;
+  border-right: 1px solid rgba(18, 20, 23, 0.1);
+}
+
+.carInfo {
+  color: rgba(18, 20, 23, 0.5);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+  gap: 4px;
+}
+
+.carInfoItem {
+  padding-right: 4px;
+}
+
+.carInfoItem:not(:last-child) {
+  border-right: 1px solid rgba(18, 20, 23, 0.1);
+}
+
+.carInfoItem > span:last-child {
+  padding-left: 4px;
+}
+
+.learnMore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 274px;
+  height: 44px;
+  padding: 12px 75px;
+  font-family: inherit;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.43;
+  color: #fff;
+  border-radius: 12px;
+  background-color: #3470ff;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.learnMore:hover,
+.learnMore:focus {
+  background-color: #0b44cd;
+}

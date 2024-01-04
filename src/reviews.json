@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Anna",
+    "avatar": "https://i.pravatar.cc/150?img=9",
+    "review": "Very good service! I love it!"
+  },
+  {
+    "id": 2,
+    "name": "Alex",
+    "avatar": "https://i.pravatar.cc/150?img=8",
+    "review": "Great!"
+  },
+  {
+    "id": 3,
+    "name": "Dmytro",
+    "avatar": "https://i.pravatar.cc/150?img=6",
+    "review": "Wide range of cars, good prices"
+  },
+  {
+    "id": 4,
+    "name": "Katya",
+    "avatar": "https://i.pravatar.cc/150?img=5",
+    "review": "I will advice this service to all my friends!"
+  },
+  {
+    "id": 5,
+    "name": "Sophia",
+    "avatar": "https://i.pravatar.cc/150?img=10",
+    "review": "Excellent customer support and easy booking process!"
+  },
+  {
+    "id": 6,
+    "name": "John",
+    "avatar": "https://i.pravatar.cc/150?img=18",
+    "review": "Affordable and reliable service. Highly recommended!"
+  }
+]

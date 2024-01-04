@@ -1,0 +1,42 @@
+.reviewWrapper {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 170px;
+  border-radius: 8px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  max-width: 600px;
+}
+
+@media screen and (min-width: 768px) {
+  .reviewWrapper {
+    height: 155px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .reviewWrapper {
+    margin-right: 24px;
+  }
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  color: #343434;
+}
+
+.review {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.28;
+  color: rgba(17, 17, 17, 0.7);
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}

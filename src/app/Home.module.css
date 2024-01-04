@@ -1,0 +1,186 @@
+.hero {
+  padding-top: 200px;
+  padding-bottom: 118px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url("../images//road.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+
+.heroContainer {
+  width: 320px;
+  padding: 0 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .heroContainer {
+    width: 768px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1440px) {
+  .heroContainer {
+    width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+}
+
+.heroTitle {
+  font-family: Inter;
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+@media screen and (min-width: 344px) {
+  .heroTitle {
+    width: 300px;
+  }
+}
+
+.heroDescription {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  color: #fff;
+  text-align: center;
+}
+
+.link {
+  display: inline-flex;
+  padding: 12px 25px;
+  border-radius: 12px;
+  background: #3470ff;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.43;
+  text-decoration: none;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link:hover,
+.link:focus {
+  background-color: #0b44cd;
+}
+
+.benefitsSection {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .benefitsSection {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.benefitsTitle {
+  max-width: 390px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+@media screen and (max-width: 398px) {
+  .benefitsTitle {
+    width: 300px;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefitsList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+.benefitsItem {
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+}
+
+@media screen and (max-width: 767px) {
+  .benefitsItem:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.benefitTitle {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 767px) {
+  .benefitTitle {
+    text-align: center;
+  }
+}
+
+.benefitText {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 767px) {
+  .benefitText {
+    text-align: center;
+  }
+}
+
+.reviewsSection {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .reviewsSection {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.reviewsContainer {
+  width: 320px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .reviewsContainer {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .reviewsContainer {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+.reviewsTitle {
+  max-width: 320px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  text-align: center;
+}
