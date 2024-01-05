@@ -1,0 +1,276 @@
+{
+  "Metadata": {
+    "catalog": "DreamCar | Catalog",
+    "favorites": "DreamCar | Favorites"
+  },
+  "NotFoundPage": {
+    "title": "Page not found",
+    "description": "Please double-check the browser address bar or use the navigation to go to a known page."
+  },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, uk {Ukrainian} en {English} other {Unknown}}"
+  },
+  "header": {
+    "home": "Home",
+    "catalog": "Catalog",
+    "favorites": "Favorites"
+  },
+  "homePage": {
+    "hero": "Unforgettable adventures start here! Explore the open road, experience the joy of discovery, and enjoy hassle-free mobility",
+    "buttonText": "Explore Our Cars",
+    "benefitsTitle": "Why choose DreamCar Rental?",
+    "firstBenefitTitle": "Wide Selection",
+    "firstBenefitDesc": "Choose from a diverse range of cars, from elegant sedans to adventurous SUVs.",
+    "secondBenefitTitle": "Easy Booking",
+    "secondBenefitDesc": "Our user-friendly website make booking a breeze. Reserve your dream car in seconds.",
+    "thirdBenefitTitle": "Quality Assurance",
+    "thirdBenefitDesc": "Rest easy knowing our vehicles are meticulously maintained and cleaned for your safety.",
+    "fourthBenefitTitle": "Competitive Pricing",
+    "fourthBenefitDesc": "Affordable Luxury: Experience high-end comfort without the high price tag.",
+    "reviewsTitle": "What our Customers Say?"
+  },
+  "card": {
+    "learnMore": "Learn more",
+    "year": "Year",
+    "make": "Make",
+    "model": "Model",
+    "type": "Type",
+    "fuelConsumption": "Fuel Consumption",
+    "engineSize": "Engine size",
+    "accessories": "Accessories",
+    "functionalities": "Accessories and functionalities",
+    "rentalPrice": "Price",
+    "country": "Ukraine",
+    "rentalConditions": "Rental Conditions",
+    "secondRentalCondition": "Valid driver's license",
+    "mileage": "Mileage",
+    "minimumAge": "Minimum age",
+    "rentalButton": "Rental car"
+  },
+
+  "filter": {
+    "brandInput": "Car brand",
+    "brandPlaceholder": "Enter the text",
+    "priceInput": "Price/ 1 hour",
+    "pricePlaceholder": "To $",
+    "mileageInput": "Car mileage / km",
+    "leftPlaceholder": "From",
+    "rightPlaceholder": "To",
+    "search": "Search",
+    "reset": "Reset"
+  },
+  "other": {
+    "loadMore": "Load more",
+    "emptyListText": "There are no favorite cars yet",
+    "errorMessage": "No cars match your criteria. Please adjust your filters."
+  },
+
+  "description": "The Lincoln Navigator L is a luxurious and spacious SUV with a refined interior and advanced technology features.",
+  "address": "123 Example Boulevard, Kharkiv, Ukraine",
+
+  "reviews": {
+    "1": {
+      "review": "Very good service! I love it!"
+    },
+    "2": { "review": "Great!" },
+    "3": { "review": "Wide range of cars, good prices" },
+    "4": { "review": "I will advice this service to all my friends!" },
+    "5": { "review": "Excellent customer support and easy booking process!" },
+    "6": { "review": "Affordable and reliable service. Highly recommended!" }
+  },
+
+  "cars": {
+    "9582": {
+      "description": "The Buick Enclave is a stylish and spacious SUV known for its comfortable ride and luxurious features.",
+      "city": "Kyiv",
+
+      "thirdRentalCondition": "Security deposit required"
+    },
+    "9584": {
+      "description": "The Volvo XC90 is a premium SUV that offers exceptional safety, advanced technology, and elegant design.",
+      "city": "Lviv",
+
+      "thirdRentalCondition": "Proof of insurance required"
+    },
+    "9585": {
+      "description": "The Volvo XC60 is a compact luxury SUV with a beautiful interior, strong performance, and advanced safety features.",
+      "city": "Odessa",
+
+      "thirdRentalCondition": "Credit card required"
+    },
+    "9587": {
+      "description": "The HUMMER H2 is a rugged and powerful SUV that stands out with its imposing presence and off-road capabilities.",
+      "city": "Kharkiv",
+
+      "thirdRentalCondition": "Security deposit required"
+    },
+    "9590": {
+      "description": "The Subaru Outback is a versatile and reliable SUV that combines off-road capability with a comfortable and spacious interior.",
+      "city": "Kyiv",
+
+      "thirdRentalCondition": "Credit card required"
+    },
+    "9591": {
+      "description": "The Mitsubishi Outlander is a practical and fuel-efficient SUV with a stylish design and a range of modern features.",
+      "city": "Lviv",
+
+      "thirdRentalCondition": "Proof of insurance required"
+    },
+    "9593": {
+      "description": "The Nissan Pathfinder is a versatile and family-friendly SUV that offers a comfortable ride and generous cargo space.",
+      "city": "Odessa",
+
+      "thirdRentalCondition": "Security deposit required"
+    },
+    "9596": {
+      "description": "The Lincoln Navigator L is a luxurious and spacious SUV with a refined interior and advanced technology features.",
+      "city": "Kharkiv",
+
+      "thirdRentalCondition": "Insurance coverage required"
+    },
+    "9597": {
+      "description": "The GMC Yukon Denali is a full-size luxury SUV that offers a powerful engine, a comfortable and spacious interior, and a host of advanced features.",
+      "city": "Dnipro",
+
+      "thirdRentalCondition": "Security deposit required"
+    },
+    "9598": {
+      "description": "The Hyundai Tucson is a reliable and fuel-efficient SUV that combines practicality with a stylish design and a comfortable ride.",
+      "city": "Zaporizhzhia",
+
+      "thirdRentalCondition": "Credit card required"
+    },
+    "9583": {
+      "description": "The MINI Convertible is a compact and fun-to-drive convertible that offers a unique and iconic design, agile handling, and an open-air driving experience.",
+      "city": "Vinnytsia",
+      "thirdRentalCondition": "Proof of insurance required"
+    },
+    "9606": {
+      "description": "The Bentley Azure is a luxurious and prestigious convertible that combines exceptional craftsmanship, powerful performance, and sophisticated elegance.",
+      "city": "Lviv",
+
+      "thirdRentalCondition": "Security deposit and insurance required"
+    },
+    "9612": {
+      "description": "The Mercedes-Benz SL-Class is a legendary luxury convertible that offers a perfect blend of thrilling performance, advanced technology, and opulent comfort.",
+      "city": "Kyiv",
+
+      "thirdRentalCondition": "Security deposit and proof of insurance required"
+    },
+    "9616": {
+      "description": "The Aston Martin DBS is a stunning and high-performance convertible that exemplifies British luxury and delivers exhilarating driving dynamics.",
+      "city": "Odessa",
+
+      "thirdRentalCondition": "Security deposit and insurance required"
+    },
+    "9619": {
+      "description": "The Pontiac Firebird is a classic American muscle car with bold styling, powerful engines, and an iconic presence that captures the essence of the golden era of performance.",
+      "city": "Lviv",
+
+      "thirdRentalCondition": "Security deposit required"
+    },
+    "9629": {
+      "description": "The Lamborghini Gallardo is an exotic and high-performance convertible that represents the epitome of Italian automotive engineering, combining breathtaking design, blistering speed, and a spine-tingling exhaust note.",
+      "city": "Kharkiv",
+
+      "thirdRentalCondition": "Security deposit and insurance required"
+    },
+    "9631": {
+      "description": "The Audi A5 is a stylish and refined convertible that offers a perfect blend of elegance, cutting-edge technology, and exhilarating driving dynamics.",
+      "city": "Dnipro",
+
+      "thirdRentalCondition": "Security deposit and insurance required"
+    },
+    "9634": {
+      "description": "The BMW Z8 is a classic and timeless convertible that combines iconic retro-inspired design, outstanding performance, and luxurious comfort.",
+      "city": "Zaporizhzhia",
+
+      "thirdRentalCondition": "Security deposit and proof of insurance required"
+    },
+    "9655": {
+      "description": "The Chevrolet Camaro is an American muscle car legend with a rich heritage, boasting aggressive styling, powerful engines, and exhilarating performance.",
+      "city": "Lviv",
+
+      "thirdRentalCondition": "Security deposit and insurance required"
+    },
+    "9685": {
+      "description": "The Mercedes-Benz SLK-Class is a luxurious and sporty convertible that offers a perfect balance of style, performance, and refinement, delivering an enjoyable open-top driving experience.",
+      "city": "Kyiv",
+
+      "thirdRentalCondition": "Security deposit and insurance required"
+    },
+    "9660": {
+      "description": "The Chrysler Voyager is a practical and versatile van/minivan that provides comfortable seating, ample cargo space, and a range of convenient features for family-oriented transportation.",
+      "city": "Odessa",
+
+      "thirdRentalCondition": "Security deposit and insurance required"
+    },
+    "9630": {
+      "description": "The Kia Rio is a compact and fuel-efficient hatchback that offers a blend of affordability, reliability, and practicality, making it an excellent choice for urban commuting and everyday driving.",
+      "city": "Kharkiv",
+
+      "thirdRentalCondition": "Security deposit and insurance required"
+    },
+    "9586": {
+      "description": "The Volvo XC60 is a luxurious and versatile SUV that combines Scandinavian design, advanced safety features, and a comfortable driving experience, making it an ideal choice for families and adventure enthusiasts.",
+      "city": "Dnipro",
+
+      "thirdRentalCondition": "Security deposit and insurance required"
+    },
+    "9618": {
+      "description": "The Land Rover Range Rover Sport is a premium SUV that offers a perfect blend of luxury, off-road capability, and dynamic performance, providing a refined driving experience both on and off the road.",
+      "city": "Lviv",
+
+      "thirdRentalCondition": "Security deposit and insurance required"
+    },
+    "9628": {
+      "description": "The Kia Rio is a versatile and fuel-efficient vehicle available in both sedan and hatchback body styles, offering a comfortable cabin, modern features, and a smooth driving experience, making it an attractive choice for urban commuters.",
+      "city": "Kharkiv",
+
+      "thirdRentalCondition": "Security deposit and insurance required"
+    },
+    "9665": {
+      "description": "The Toyota Camry is a reliable and fuel-efficient sedan known for its practicality and comfortable ride.",
+      "city": "Kharkiv",
+
+      "thirdRentalCondition": "Credit card required"
+    },
+    "9666": {
+      "description": "The Honda Civic is a popular and efficient sedan with a reputation for reliability and excellent fuel economy.",
+      "city": "Lviv",
+
+      "thirdRentalCondition": "Proof of insurance required"
+    },
+    "9667": {
+      "description": "The Ford Escape is a versatile and compact SUV offering a comfortable interior and modern technology features.",
+      "city": "Kharkiv",
+
+      "thirdRentalCondition": "Proof of insurance required"
+    },
+    "9668": {
+      "description": "The Nissan Sentra is a compact sedan known for its comfortable ride and modern technology features.",
+      "city": "Odessa",
+
+      "thirdRentalCondition": "Credit card required"
+    },
+    "9669": {
+      "description": "The Chevrolet Equinox is a comfortable and family-friendly SUV with ample cargo space and modern safety features.",
+      "city": "Odessa",
+
+      "thirdRentalCondition": "Proof of insurance required"
+    },
+    "9670": {
+      "description": "The Hyundai Sonata is a stylish and practical sedan with a comfortable interior and advanced technology.",
+      "city": "Odessa",
+
+      "thirdRentalCondition": "Proof of insurance required"
+    },
+    "9645": {
+      "description": "The Tesla Model 3 is an electric car known for its impressive range, cutting-edge technology, and environmentally friendly performance.",
+      "city": "Kyiv",
+
+      "thirdRentalCondition": "Security deposit and charging plan required"
+    }
+  }
+}

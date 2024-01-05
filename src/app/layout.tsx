@@ -1,24 +1,11 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import Header from "@/app/components/Header/Header";
-import "modern-normalize/modern-normalize.css";
+import { ReactNode } from "react";
 
-export const metadata: Metadata = {
-  title: "DreamCar",
-  description: "The best car rental service",
+type Props = {
+  children: ReactNode;
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
-  return (
-    <html lang="en">
-      <body>
-        <Header />
-        <main>{children}</main>
-      </body>
-    </html>
-  );
+// Since we have a `not-found.tsx` page on the root, a layout file
+// is required, even if it's just passing children through.
+export default function RootLayout({ children }: Props) {
+  return children;
 }

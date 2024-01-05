@@ -1,0 +1,38 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 20px;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.navLink {
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: black;
+  font-weight: 500;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navLink:hover,
+.navLink:focus {
+  background-color: #0b44cd;
+}
+
+.active {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  color: white;
+  background-color: #3470ff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
