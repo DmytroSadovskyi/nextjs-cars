@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import { persist, createJSONStorage } from "zustand/middleware";
-import { Car } from "./components/CarCard/CarCard";
+import { Car } from "./[locale]/components/CarCard/CarCard";
 
 interface State {
   cars: Car[];
