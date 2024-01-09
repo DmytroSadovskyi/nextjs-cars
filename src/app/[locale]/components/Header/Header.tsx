@@ -1,9 +1,14 @@
 "use client";
-import styles from "./Header.module.css";
 import { useTranslations } from "next-intl";
 import NavigationLink from "@/app/[locale]/components/NavigationLink";
 import LocaleSwitcher from "../LocaleSwitcher";
 import { useState } from "react";
+import { Link } from "@/navigation";
+import CloseIcon from "../../../../icons/close-bold-svgrepo-com.svg";
+import BurgerIcon from "../../../../icons/menu-burger-horizontal-svgrepo-com.svg";
+import logo from "../../../../images/car.png";
+import Image from "next/image";
+import styles from "./Header.module.css";
 
 export default function Header() {
   const t = useTranslations("header");
@@ -21,8 +26,15 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
+      <Link href="/">
+        <Image src={logo} alt="logo" />
+      </Link>
       <button className={styles.burgerButton} onClick={toggleMenu}>
-        {isMenuOpen ? "X" : "☰"}
+        {isMenuOpen ? (
+          <CloseIcon width={30} height={30} />
+        ) : (
+          <BurgerIcon width={30} height={30} />
+        )}
       </button>
 
       <nav className={styles.nav}>
