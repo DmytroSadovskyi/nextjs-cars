@@ -6,7 +6,7 @@ import { useState } from "react";
 import { Link } from "@/navigation";
 import CloseIcon from "../../../../icons/close-bold-svgrepo-com.svg";
 import BurgerIcon from "../../../../icons/menu-burger-horizontal-svgrepo-com.svg";
-import logo from "../../../../images/car.png";
+import logo from "../../../../images/icons8-car-windows-11-color-96.png";
 import Image from "next/image";
 import styles from "./Header.module.css";
 
