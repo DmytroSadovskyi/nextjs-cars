@@ -27,7 +27,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <Link href="/">
-        <Image src={logo} alt="logo" />
+        <Image src={logo} alt="logo" width={48} height={48} />
       </Link>
       <button className={styles.burgerButton} onClick={toggleMenu}>
         {isMenuOpen ? (
