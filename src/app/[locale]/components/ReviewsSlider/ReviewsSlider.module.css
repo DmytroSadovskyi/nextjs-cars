@@ -2,7 +2,6 @@
   position: relative;
 }
 
-
 .controls {
   position: absolute;
   display: flex;
@@ -21,4 +20,5 @@
   justify-content: center;
   background-color: transparent;
   border: none;
+  padding: 5px;
 }

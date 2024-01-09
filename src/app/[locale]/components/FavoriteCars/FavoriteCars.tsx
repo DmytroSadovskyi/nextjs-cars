@@ -154,7 +154,7 @@ export default function FavoriteCars() {
               ))}
             </ul>
           ) : (
-            <p>{t("emptyListText")}</p>
+            <p className={styles.emptyListText}>{t("emptyListText")}</p>
           ))}
       </div>
     </>

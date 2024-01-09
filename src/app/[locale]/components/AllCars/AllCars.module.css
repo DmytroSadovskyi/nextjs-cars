@@ -46,3 +46,7 @@
 .sort svg {
   fill: #3470ff;
 }
+
+.errorText {
+  text-align: center;
+}

@@ -1,6 +1,5 @@
 "use client";
 import styles from "./Header.module.css";
-import { Link } from "@/navigation";
 import { useTranslations } from "next-intl";
 import NavigationLink from "@/app/[locale]/components/NavigationLink";
 import LocaleSwitcher from "../LocaleSwitcher";
@@ -14,7 +13,6 @@ export default function Header() {
         <NavigationLink href="/">{t("home")}</NavigationLink>
         <NavigationLink href="/catalog">{t("catalog")}</NavigationLink>
         <NavigationLink href="/favorites">{t("favorites")}</NavigationLink>
-
         <LocaleSwitcher />
       </nav>
     </header>

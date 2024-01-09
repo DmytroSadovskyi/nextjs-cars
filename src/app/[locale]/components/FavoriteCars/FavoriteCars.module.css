@@ -22,3 +22,7 @@
 .sort svg {
   fill: #3470ff;
 }
+
+.emptyListText {
+  text-align: center;
+}

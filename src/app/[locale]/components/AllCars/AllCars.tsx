@@ -37,6 +37,7 @@ export default function AllCars() {
   const [sortOrder, setSortOrder] = useState("ascending");
 
   const handleLoadMore = () => setCurrentPage((prevPage) => prevPage + 1);
+
   useEffect(() => {
     const controller = new AbortController();
     const getAllCars = async () => {
@@ -167,7 +168,7 @@ export default function AllCars() {
       <div className="container">
         {currentCars.length === 0 && showNoCarsMessage && (
           <>
-            <p>{t("errorMessage")}</p>
+            <p className={styles.errorText}>{t("errorMessage")}</p>
           </>
         )}
 
