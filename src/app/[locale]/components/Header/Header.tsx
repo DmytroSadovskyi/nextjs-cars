@@ -1,11 +1,10 @@
 "use client";
+import { Squash as Hamburger } from "hamburger-react";
 import { useTranslations } from "next-intl";
 import NavigationLink from "@/app/[locale]/components/NavigationLink";
 import LocaleSwitcher from "../LocaleSwitcher";
 import { useState } from "react";
 import { Link } from "@/navigation";
-import CloseIcon from "../../../../icons/close-bold-svgrepo-com.svg";
-import BurgerIcon from "../../../../icons/menu-burger-horizontal-svgrepo-com.svg";
 import logo from "../../../../images/icons8-car-windows-11-color-96.png";
 import Image from "next/image";
 import styles from "./Header.module.css";
@@ -36,9 +35,8 @@ export default function Header() {
           height={30}
         />
       </Link>
-      <button className={styles.burgerButton} onClick={toggleMenu}>
-        {isMenuOpen ? <CloseIcon /> : <BurgerIcon />}
-      </button>
+
+      <Hamburger toggled={isMenuOpen} toggle={toggleMenu} size={28} />
 
       <nav className={styles.nav}>
         <NavigationLink href="/">{t("home")}</NavigationLink>
