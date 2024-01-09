@@ -27,14 +27,17 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <Link href="/">
-        <Image src={logo} alt="logo" width={48} height={48} />
+        <Image
+          priority={true}
+          className={styles.logo}
+          src={logo}
+          alt="logo"
+          width={30}
+          height={30}
+        />
       </Link>
       <button className={styles.burgerButton} onClick={toggleMenu}>
-        {isMenuOpen ? (
-          <CloseIcon width={30} height={30} />
-        ) : (
-          <BurgerIcon width={30} height={30} />
-        )}
+        {isMenuOpen ? <CloseIcon /> : <BurgerIcon />}
       </button>
 
       <nav className={styles.nav}>
