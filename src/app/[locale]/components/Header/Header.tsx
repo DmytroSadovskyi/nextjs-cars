@@ -36,7 +36,13 @@ export default function Header() {
         />
       </Link>
 
-      <Hamburger toggled={isMenuOpen} toggle={toggleMenu} size={28} />
+      <Hamburger
+        toggled={isMenuOpen}
+        toggle={toggleMenu}
+        size={28}
+        hideOutline={false}
+        label="menu-icon"
+      />
 
       <nav className={styles.nav}>
         <NavigationLink href="/">{t("home")}</NavigationLink>
