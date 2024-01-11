@@ -1,15 +1,14 @@
 "use client";
 import { useState, useEffect, useCallback } from "react";
 import { useTranslations } from "next-intl";
-import { useStore } from "../../../store";
-import CarCard from "../../components/CarCard/CarCard";
+import { Toaster, toast } from "react-hot-toast";
+import { Car } from "../../../../types/car";
 import AscendingIcon from "../../../../icons/sort-amount-asc.svg";
 import DescendingIcon from "../../../../icons/sort-amount-desc.svg";
-import { Toaster, toast } from "react-hot-toast";
-
+import { useStore } from "../../../store";
+import Filter from "../Filter";
+import CarCard from "../../components/CarCard";
 import styles from "./FavoriteCars.module.css";
-import { Car } from "../../components/CarCard/CarCard";
-import Filter from "../Filter/Filter";
 
 export default function FavoriteCars() {
   const t = useTranslations("other");

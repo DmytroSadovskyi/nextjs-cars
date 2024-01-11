@@ -1,8 +1,8 @@
 import { Link } from "@/navigation";
-import ReviewsSlider from "./components/ReviewsSlider/ReviewsSlider";
 import { useTranslations } from "next-intl";
-import styles from "../Home.module.css";
 import reviews from "../../reviews.json";
+import styles from "../Home.module.css";
+import ReviewsSlider from "./components/ReviewsSlider";
 
 export default function Home() {
   const t = useTranslations("homePage");

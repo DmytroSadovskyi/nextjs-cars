@@ -1,30 +1,12 @@
 "use client";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { useStore } from "@/app/store";
+import { Car } from "@/types/car";
 import HeartIcon from "../../../../icons/heart.svg";
 import HeartIconFavorite from "../../../../icons/heart-favorite.svg";
-import Modal from "../Modal/Modal";
+import Modal from "../Modal";
 import styles from "./CarCard.module.css";
-import { useStore } from "@/app/store";
-
-export type Car = {
-  id: number;
-  year: number;
-  make: string;
-  model: string;
-  type: string;
-  img: string;
-  description: string;
-  fuelConsumption: string;
-  engineSize: string;
-  accessories: string[];
-  functionalities: string[];
-  rentalPrice: string;
-  rentalCompany: string;
-  address: string;
-  rentalConditions: string;
-  mileage: number;
-};
 
 export default function CarCard({ car }: { car: Car }) {
   const {

@@ -5,9 +5,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ArrowLeft from "../../../../icons/down-arrow-left.svg";
 import ArrowRight from "../../../../icons/down-arrow-right.svg";
+import { CustomerReview } from "../../../../types/customerReview";
+import Review from "../Review";
 import styles from "./ReviewsSlider.module.css";
-import { CustomerReview } from "../Review/Review";
-import Review from "../Review/Review";
 
 interface SliderProps {
   reviews: CustomerReview[];

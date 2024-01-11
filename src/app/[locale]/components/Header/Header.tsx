@@ -1,12 +1,12 @@
 "use client";
 import { Squash as Hamburger } from "hamburger-react";
 import { useTranslations } from "next-intl";
-import NavigationLink from "@/app/[locale]/components/NavigationLink";
-import LocaleSwitcher from "../LocaleSwitcher";
 import { useState } from "react";
-import { Link } from "@/navigation";
-import logo from "../../../../images/icons8-car-windows-11-color-96.png";
 import Image from "next/image";
+import { Link } from "@/navigation";
+import NavigationLink from "@/app/[locale]/components/NavigationLink";
+import logo from "../../../../images/icons8-car-windows-11-color-96.png";
+import LocaleSwitcher from "../LocaleSwitcher";
 import styles from "./Header.module.css";
 
 export default function Header() {

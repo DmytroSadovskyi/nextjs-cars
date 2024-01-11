@@ -1,8 +1,8 @@
 "use client";
 import { MouseEvent, useCallback, useEffect } from "react";
 import { useTranslations } from "next-intl";
-import styles from "./Modal.module.css";
 import CloseIcon from "../../../../icons/close-icon.svg";
+import styles from "./Modal.module.css";
 
 interface ModalProps {
   image: string;

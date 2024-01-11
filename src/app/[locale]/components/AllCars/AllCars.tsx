@@ -3,12 +3,12 @@ import { useState, useEffect, useCallback } from "react";
 import { useTranslations } from "next-intl";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
-import fetchCars from "../../../../services/carsApi";
-import CarCard from "../../components/CarCard/CarCard";
-import { Car } from "../../components/CarCard/CarCard";
-import Filter from "../Filter/Filter";
 import DescendingIcon from "../../../../icons/sort-amount-desc.svg";
 import AscendingIcon from "../../../../icons/sort-amount-asc.svg";
+import { Car } from "../../../../types/car";
+import fetchCars from "../../../../services/carsApi";
+import CarCard from "../../components/CarCard";
+import Filter from "../Filter/Filter";
 import styles from "./AllCars.module.css";
 
 export default function AllCars() {

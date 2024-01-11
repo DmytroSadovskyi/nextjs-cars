@@ -1,13 +1,9 @@
 import Image from "next/image";
-import styles from "./Review.module.css";
 import { useTranslations } from "next-intl";
-export type CustomerReview = {
-  id?: number;
-  avatar: string;
-  name: string;
-  review: string;
-};
-export default function Review({ avatar, name, review, id }: CustomerReview) {
+import { CustomerReview } from "@/types/customerReview";
+import styles from "./Review.module.css";
+
+export default function Review({ avatar, name, review }: CustomerReview) {
   const t = useTranslations();
   return (
     <>

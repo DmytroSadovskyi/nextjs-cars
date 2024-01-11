@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import "../globals.css";
-import Header from "../[locale]/components/Header/Header";
 import "modern-normalize/modern-normalize.css";
 import { NextIntlClientProvider, useMessages } from "next-intl";
+import "../globals.css";
+import Header from "../[locale]/components/Header";
 
 export const metadata: Metadata = {
   title: "DreamCar",
