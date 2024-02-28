@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useTranslations } from "next-intl";
+import { AnimatePresence } from "framer-motion";
 import { useStore } from "@/app/store";
 import { Car } from "@/types/car";
 import HeartIcon from "../../../../icons/heart.svg";
@@ -86,26 +87,28 @@ export default function CarCard({ car }: { car: Car }) {
       <button type="button" onClick={openModal} className={styles.learnMore}>
         {t("learnMore")}
       </button>
-      {isModalOpen && (
-        <Modal
-          image={img}
-          onClose={closeModal}
-          id={id}
-          year={year}
-          make={make}
-          model={model}
-          type={type}
-          functionalities={functionalities}
-          rentalPrice={rentalPrice}
-          address={address}
-          accessories={accessories}
-          engineSize={engineSize}
-          fuelConsumption={fuelConsumption}
-          rentalConditions={rentalConditions}
-          mileage={mileage}
-          description={description}
-        />
-      )}
+      <AnimatePresence initial={false} onExitComplete={() => null}>
+        {isModalOpen && (
+          <Modal
+            image={img}
+            onClose={closeModal}
+            id={id}
+            year={year}
+            make={make}
+            model={model}
+            type={type}
+            functionalities={functionalities}
+            rentalPrice={rentalPrice}
+            address={address}
+            accessories={accessories}
+            engineSize={engineSize}
+            fuelConsumption={fuelConsumption}
+            rentalConditions={rentalConditions}
+            mileage={mileage}
+            description={description}
+          />
+        )}
+      </AnimatePresence>
     </div>
   );
 }

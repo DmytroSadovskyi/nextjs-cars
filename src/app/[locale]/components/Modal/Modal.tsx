@@ -1,5 +1,6 @@
 "use client";
 import { MouseEvent, useCallback, useEffect } from "react";
+import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import CloseIcon from "../../../../icons/close-icon.svg";
 import styles from "./Modal.module.css";
@@ -22,6 +23,26 @@ interface ModalProps {
   rentalConditions: string;
   description: string;
 }
+
+const dropIn = {
+  hidden: {
+    opacity: 0,
+    transform: "scale(0.9)",
+  },
+  visible: {
+    opacity: 1,
+    transform: "scale(1)",
+    transition: {
+      duration: 0.1,
+      type: "spring",
+      damping: 25,
+      stiffness: 500,
+    },
+  },
+  exit: {
+    opacity: 0,
+  },
+};
 
 export default function Modal({
   image,
@@ -75,8 +96,20 @@ export default function Modal({
   }, [handleKeyDown]);
 
   return (
-    <div className={styles.backdrop} onClick={handleBackdropClick}>
-      <div className={styles.modalWrapper}>
+    <motion.div
+      className={styles.backdrop}
+      onClick={handleBackdropClick}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <motion.div
+        className={styles.modalWrapper}
+        variants={dropIn}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+      >
         <div className={styles.wrapper}>
           <button
             className={styles.closeButton}
@@ -137,7 +170,7 @@ export default function Modal({
               {t("minimumAge")}: <span>{number}</span>
             </li>
             <li className={styles.rentalInfoItem}>
-              {splittedRentalConditions[1]}
+              {t("secondRentalCondition")}
             </li>
             <li className={styles.rentalInfoItem}>
               {splittedRentalConditions[2]}
@@ -153,7 +186,7 @@ export default function Modal({
             {t("rentalButton")}
           </a>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
