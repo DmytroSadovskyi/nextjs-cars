@@ -43,6 +43,7 @@
 body {
   margin: 0;
   font-family: "Manrope", sans-serif;
+  padding-top: 60px;
 }
 
 .no-scroll {
